@@ -60,9 +60,9 @@ These metrics are:
 - Distribution of sequence length overall sequences
 - Sequences duplicates.
 - Adapters sequences contamination.   
-(plots can be seen [here](/fastqcmetrics.md))
+(plots can be seen [here](files/fastqcmetrics.md))
 
-There is one HTML output per sequencing file. When running the QC on tens of files at once, looking at each one of the outputs is tedious. [MultiQC](https://multiqc.info) is a tool allowing to aggregate the results from bioinformatics analyses (such as QCs of fastq files) across many samples in [a single report](/multiqc_report.html). From this report, it is then easy to discriminate samples that have quality reports out of the average, and that should maybe be removed. 
+There is one HTML output per sequencing file. When running the QC on tens of files at once, looking at each one of the outputs is tedious. [MultiQC](https://multiqc.info) is a tool allowing to aggregate the results from bioinformatics analyses (such as QCs of fastq files) across many samples in [a single report](/files/multiqc_report.html). From this report, it is then easy to discriminate samples that have quality reports out of the average, and that should maybe be removed. 
 
 ### Trimming 
 The QC will only help to troubleshoot samples. 
@@ -77,7 +77,7 @@ Lastly, very short reads (shorter than 20bp or so) will be removed, as short seq
 
 In our experiment, sequencing resulted in 44,23 million reads per library on average, of which 44,18 remained after quality filtering. As reads were of good quality before trimming, read lengths after trimming were hardly affected.
 
-An example of a trimming report can be accessed [here](/200022_36_48B_S37_L002_R1_001.fastq_trimming_report.txt).
+An example of a trimming report can be accessed [here](/files/200022_36_48B_S37_L002_R1_001.fastq_trimming_report.txt).
 
 ### Alignment and methylation call 
 
